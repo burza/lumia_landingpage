@@ -1,35 +1,10 @@
-$(document).ready(function() {
-  $('.lumia-top-navbar').onePageNav({
-      currentClass: 'active',
-      changeHash: true,
-      scrollSpeed: 700,
-      scrollOffset: 0,
-      scrollThreshold: 0.5,
-      filter: '',
-      easing: 'swing',
-  
-      begin: function() {
-        //I get fired when the animation is starting
-        //Hack so you can click other menu items after the initial click
-        $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
-      },
-      
-      end: function() {
-        //I get fired when the animation is ending
-        $('#device-dummy').remove();
-      },
-      
-      scrollChange: function($currentListItem) {
-        //I get fired when you enter a section and I pass the list item of the section
-      }
-    });
-  
-  // $('.lumia-top-navbar > a').click(function(e) {
-  //   e.preventDefault();
-  //   $('html, body').animate({
-  //     scrollTop: $("#lumia-device-infos").offset().top
-  //   }, 2000);    
-  // });
+$(document).ready(function() {  
+  $('.lumia-top-navbar > a').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+    	scrollTop: $("#lumia-device-infos").offset().top
+    }, 2000);    
+  });
   
   if ( Modernizr.csstransforms ) {
     var elem = document.getElementById('slider');
