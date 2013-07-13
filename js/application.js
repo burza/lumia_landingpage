@@ -42,7 +42,7 @@ $(document).ready(function() {
 		$('.lumia-device-info-category-title').removeClass('active');	  
 	 	$('.lumia-device-info-category-content').slideUp('normal');
  
-		if($(this).next().is(':hidden') == true) {		
+		if($(this).next().is(':hidden')) {		
 			$(this).addClass('active');
 			$(this).next().slideDown('normal');
 		 } 
