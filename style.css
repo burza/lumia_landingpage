@@ -10,7 +10,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  font-size: 16px; }
+
+p {
+  font-size: 1em; }
 
 ol, ul {
   list-style: none; }
@@ -48,6 +53,16 @@ table {
   left: 0;
   width: 100%; }
 
+h2 {
+  font-size: 1.2em; }
+
+#lumia-intro-slider,
+#lumia-phone-provider,
+#lumia-short-device-infos {
+  padding-top: 46px;
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .lumia-top-navbar {
   background-color: white;
   line-height: 1em;
@@ -55,19 +70,24 @@ table {
   top: 0;
   left: 0;
   z-index: 99;
-  padding: 15px 5% 15px 5%;
-  width: 90%; }
+  padding: 15px 5%;
+  width: 90%;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
 
 .lumia-top-navbar > a {
   color: black;
   font-family: sans-serif;
   text-decoration: none;
-  font-size: 1em; }
+  font-size: 1em;
+  float: right; }
 
 #lumia-intro-slider {
-  background-color: #5fb7e3;
+  background-color: #00bcf2;
   color: white;
-  padding: 78px 5% 32px 5%;
+  padding-top: 78px;
+  padding-bottom: 32px;
   width: 90%; }
   #lumia-intro-slider .slider-btn {
     position: absolute;
@@ -86,3 +106,22 @@ table {
 
 .lumia-device-info-category.active > ul {
   display: block; }
+
+.lumia-device-infos-title {
+  background: #969696;
+  color: white;
+  padding: 15px 5%; }
+
+.lumia-device-info-category-title,
+.lumia-device-info-category-item {
+  padding: 10px 5%;
+  font-size: 1em; }
+
+.lumia-device-info-category-title {
+  background: #00bcf2;
+  font-weight: lighter;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.lumia-device-info-category-content {
+  padding: 27px 3%; }

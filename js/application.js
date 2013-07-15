@@ -4,17 +4,17 @@ $(document).ready(function() {
   $('.slider-btn').hide();
 
   $(".swipe-wrap > div > img").load(function() {
-    calculation();
+    calculate_slider_button_position();
     $('.slider-btn').fadeIn();    
   });
 
-  $(window).resize(calculation);
+  $(window).resize(calculate_slider_button_position);
   
-  function calculation() {
+  function calculate_slider_button_position() {
     var elem = $(".swipe-wrap > div > img");
     var top_offset = elem.offset().top;
-    var slider_btn_height = $('.slider-btn').height() / 2;
-    var pos = (elem.height() / 2) + top_offset - slider_btn_height;
+    var slider_btn = $('.slider-btn');
+    var pos = (elem.height() / 2) + top_offset - (slider_btn.height() / 2);
 
     $('.slider-btn').css('top', pos + 'px');
   }

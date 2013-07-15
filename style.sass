@@ -1,3 +1,7 @@
+$blue: #00BCF2
+$grey: #969696
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
   padding: 0
@@ -11,6 +15,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body 
   line-height: 1
+  font-family: Arial, sans-serif
+  font-size: 16px
+
+p
+  font-size: 1em
 
 ol, ul 
   list-style: none
@@ -47,6 +56,16 @@ table
   top: 0
   left: 0
   width: 100%
+  
+h2
+  font-size: 1.2em
+
+#lumia-intro-slider,
+#lumia-phone-provider,
+#lumia-short-device-infos
+  padding-top: 46px
+  padding-left: 5%
+  padding-right: 5%
 
 .lumia-top-navbar
   background-color: white
@@ -55,19 +74,25 @@ table
   top: 0
   left: 0
   z-index: 99
-  padding: 15px 5% 15px 5%
+  padding: 15px 5%
   width: 90%
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1)
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1)
+  box-shadow: 0 2px 2px rgba(0,0,0,.1)
 
 .lumia-top-navbar > a
   color: black
   font-family: sans-serif 
   text-decoration: none 
   font-size: 1em
+  float: right
 
 #lumia-intro-slider
-  background-color: #5fb7e3
+  background-color: $blue
   color: white
-  padding: 78px 5% 32px 5%
+  padding:
+    top: 78px 
+    bottom: 32px
   width: 90%
   .slider-btn
     position: absolute
@@ -87,4 +112,21 @@ table
   display: block
 
 
-  
+.lumia-device-infos-title
+  background: $grey
+  color: white
+  padding: 15px 5%
+
+.lumia-device-info-category-title, 
+.lumia-device-info-category-item
+  padding: 10px 5%
+  font-size: 1em
+
+.lumia-device-info-category-title
+  background: $blue
+  font-weight: lighter
+  color: white
+  border-bottom: 1px solid rgba(255,255,255,.3)
+
+.lumia-device-info-category-content 
+  padding: 27px 3%
