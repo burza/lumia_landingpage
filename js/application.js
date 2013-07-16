@@ -2,20 +2,20 @@
 $(document).ready(function() {  
 
 
-  calculate_slider_button_position();
+  // calculate_slider_button_position();
 
   $('.slider-btn').fadeIn();    
   
-  function calculate_slider_button_position() {
-    var elem = $(".swipe-wrap > div > img");
-    var top_offset = elem.offset().top;
-    var slider_btn = $('.slider-btn');
-    var pos = (elem.height() / 2) + top_offset - (slider_btn.height() / 2);
+  // function calculate_slider_button_position() {
+  //   var elem = $(".swipe-wrap > div > img");
+  //   var top_offset = elem.offset().top;
+  //   var slider_btn = $('.slider-btn');
+  //   var pos = (elem.height() / 2) + top_offset - (slider_btn.height() / 2);
+  // 
+  //   $('.slider-btn').css('top', pos + 'px');
+  // }
 
-    $('.slider-btn').css('top', pos + 'px');
-  }
-
-  $(window).resize(calculate_slider_button_position);
+  // $(window).resize(calculate_slider_button_position);
   
   $('.lumia-top-navbar > a').click(function(e) {
     e.preventDefault();
@@ -37,6 +37,10 @@ $(document).ready(function() {
       // callback: function(index, element) {},
       // transitionEnd: function(index, element) {}
     });
+    
+    $('#slider').prepend('<a href="javascript:;" class="slider-btn prev"></a>');
+    $('#slider').prepend('<a href="javascript:;" class="slider-btn next"></a>');
+    
     $('.slider-btn.next').click(function() { mySwipe.next(); });
     $('.slider-btn.prev').click(function() { mySwipe.prev(); });
   }
