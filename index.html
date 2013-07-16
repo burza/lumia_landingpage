@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Nokia Lumia - Landingpage</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
     
@@ -10,22 +13,48 @@
   <body>
     <div id="lumia-container">
       <div class="lumia-top-navbar">
-        <a href="#lumia-device-infos">Geräteinfo</a>
+        <a href="#lumia-device-infos">Gerätedetails</a>
       </div>
       <section id="lumia-intro-slider">
         <div id="slider" class="swipe">
           <div class="swipe-wrap">
-            <div class="intro_one">
+            <div class="slide-teaser intro-one">
               <div class="swipe-textbox">
-                Das neue Nokia Lumia 925 mit der beeindruckend lichtstarken Smartphone-Kamera
+                Das neue Nokia Lumia 925. <br />
+                Die lichtstärkste Smartphone-Kamera im Verbrauchertest.*
               </div> 
-              <img src="img/slider/slider_1.png" height="50%" width="50%"/>
+              <div class="swipe-img">
+                <img src="img/slider/slider_1.png"/>
+              </div>
             </div>
             <div class="slide-teaser intro-two">
-              <img src="img/slider/slider_2.png" height="50%" width="50%"/>
+              <div class="swipe-textbox">
+                Sensorgröße <br />
+                8,7 Megapixel PureView
+              </div> 
+              <div class="swipe-img">
+                <img src="img/slider/slider_2.png"/>
+              </div>
             </div>
-            <div class="slide-teaser intro-three"><img src="img/slider/slider_3.png" height="50%" width="50%"/></div>
-            <div class="slide-teaser intro-four"><img src="img/slider/slider_4.png" height="50%" width="50%"/></div>
+            <div class="slide-teaser intro-three">
+              <div class="swipe-textbox">
+                Größe <br />
+                4,5 Zoll mit <br />
+                Qualcomm Snapdragon S4
+              </div> 
+              <div class="swipe-img">
+                <img src="img/slider/slider_3.png"/>
+              </div>
+            </div>
+            <div class="slide-teaser intro-four">
+              <div class="swipe-textbox">
+                12,8 Std. Sprechzeit und<br />
+                440 Std. Stand-by-Zeit
+              </div> 
+              <div class="swipe-img">
+                <img src="img/slider/slider_4.png"/>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -37,10 +66,10 @@
         </video>
         <p>Dein Nokia Lumia 925 gibt es bei folgenden Partnern</p>
         <ul>
-          <li><a href="#" class="lumia-store vodafone"></a></li>
-          <li><a href="#" class="lumia-store o2"></a></li>
-          <li><a href="#" class="lumia-store tmobile"></a></li>
-          <li><a href="#" class="lumia-store mobilcom"></a></li>
+          <li><a href="http://shop.vodafone.de/Shop/handys/nokia-lumia-925-schwarz-32gb/" class="lumia-store vodafone"></a></li>
+          <li><a href="http://www.o2online.de/eshop/katalog/detail/privatkunden/geraet-ohne-vertrag/nokia-lumia-925-weiss" class="lumia-store o2"></a></li>
+          <li><a href="http://www.t-mobile.de/windows-phone/nokia-lumia-925/0,25079,28068-_,00.html" class="lumia-store tmobile"></a></li>
+          <li><a href="http://handyshop.mobilcom-debitel.de/handys-ohne-vertrag/nokia/nokia-lumia-925-white.htm" class="lumia-store mobilcom"></a></li>
         </ul>
       </section>
       <section id="lumia-short-device-infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -210,6 +239,7 @@
           </li>
         </ul>
       </section>
+      <small>* Laut einer  TNS-Befragung bestätigten 80% der befragten Verbraucher, dass das Nokia Lumia 925 die besten Bilder bei schwierigen Lichtverhältnissen macht. Weitere Informationen unter windowsphone.de</small>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>

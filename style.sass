@@ -1,3 +1,4 @@
+$font-color: #333333
 $blue: #00BCF2
 $grey: #969696
 
@@ -20,10 +21,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
   display: block
 
+html
+  -webkit-text-size-adjust: 100%
+
 body 
   line-height: 1
   font-family: Arial, sans-serif
   font-size: 16px
+  color: $font-color
 
 p
   font-size: 1em
@@ -57,16 +62,27 @@ table
   position: relative
   overflow: hidden
   display: block
-  
-.swipe-textbox
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
 
-.swipe-wrap > div > img
-  margin: 0 auto
+.swipe-img > img
   display: block
+  width: 75%
+  height: 50%
+  margin: 0 auto
+
+.swipe-textbox
+  padding: 0 20px
+  margin-bottom: 20px
+  font-weight: bold
+  line-height: 1.3em
+  min-height: 62px
+//.slide-teaser.intro-one .swipe-img
+//  background-image: url('img/slider/slider_1.png')
+//.slide-teaser.intro-two .swipe-img
+//  background-image: url('img/slider/slider_2.png')
+//.slide-teaser.intro-three .swipe-img
+//  background-image: url('img/slider/slider_3.png')
+//.slide-teaser.intro-four *
+//  background-image: url('img/slider/slider_4.png')
 
 h2
   font-size: 1.2em
@@ -95,7 +111,7 @@ h2
   box-shadow: 0 2px 2px rgba(0,0,0,.1)
 
 .lumia-top-navbar > a
-  color: black
+  color: $font-color
   font-family: sans-serif 
   text-decoration: none 
   font-size: 1em
@@ -121,12 +137,12 @@ h2
       size: 150px 50px
       position: 0 50%
     display: block
-    opacity: .6
+    opacity: .3
     &.prev
-      left: 6%
+      left: $default-padding
       background-position: 0 50%
     &.next
-      right: 6%
+      right: $default-padding
       background-position: -100px 50%
   
 .lumia-device-info-category > ul
@@ -147,10 +163,20 @@ h2
   font-size: 1em
 
 .lumia-device-info-category-title
-  background: $blue
+  background-color: $blue 
+  background-image: url('img/accordion-arrows.png')
+  background-size: 18px 49px
+  background-repeat: no-repeat
+  background-position: 95% 13px
   font-weight: lighter
   color: white
   border-bottom: 1px solid rgba(255,255,255,.3)
+  &:last-child
+    border-bottom: none
+  &.active
+    background-position: 95% -25px
+
+.lumia-device-info-category-title
 
 .lumia-device-info-category-content 
   padding: 27px 3%
@@ -183,6 +209,8 @@ h2
     width: 50%
     height: 100px
     display: block
+    -moz-background-size: auto 50%
+    -webkit-background-size: auto 50%
     background-size: auto 50%
     background-position: center center
     background-repeat: no-repeat
@@ -198,38 +226,40 @@ h2
     &.mobilcom
       background-color: $mobilcom-bg
       background-image: url('img/provider/mobilcom.png')
-      background-size: 100% auto
     
     
-    
-    
-    
-    
+small
+  font-size: 0.8em
+  padding: 40px 20px
+  display: block
+  line-height: 1.3em  
+      
 /* Large desktop */
 @media (min-width: 1200px)
-  body
-    border: 5px solid green
+  //body
+  //  border: 5px solid green
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px)
-  body
-    border: 5px solid red
+  //body
+  //  border: 5px solid red
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px)
-  body
-    border: 5px solid orange
-  
-  #lumia-phone-provider video
-    width: 50%
-  
+  //body
+  //  border: 5px solid orange
+    
 
 /* Landscape phones and down */
-@media (max-width: 480px)
-  body
-    border: 5px solid pink
+@media only screen and (max-width: 480px)
+  //body
+  //  border: 5px solid pink
     
   #lumia-phone-provider video
     width: 85%
+  .mobilcom
+    -moz-background-size: auto 35% !important
+    -webkit-background-size: auto 35% !important
+    background-size: auto 35% !important
 
     
