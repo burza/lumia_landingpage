@@ -146,14 +146,14 @@ h2 {
   background-image: url("img/accordion-arrows.png");
   background-size: 18px 49px;
   background-repeat: no-repeat;
-  background-position: 95% 13px;
+  background-position: 95% 12px;
   font-weight: lighter;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   .lumia-device-info-category-title:last-child {
     border-bottom: none; }
   .lumia-device-info-category-title.active {
-    background-position: 95% -25px; }
+    background-position: 95% -24px; }
 
 .lumia-device-info-category-content {
   padding: 27px 3%; }
