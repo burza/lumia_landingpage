@@ -1,6 +1,13 @@
 $blue: #00BCF2
 $grey: #969696
 
+$topbar-height: 60px
+$default-padding: 20px
+
+$vodafone-bg: $blue
+$o2-bg: #FF8C00
+$tmobile-bg: #7FBA00
+$mobilcom-bg: #00D8CC
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -56,26 +63,33 @@ table
   top: 0
   left: 0
   width: 100%
-  
+
+.swipe-wrap > div > img
+  margin: 0 auto
+  display: block
+
 h2
   font-size: 1.2em
 
-#lumia-intro-slider,
-#lumia-phone-provider,
 #lumia-short-device-infos
-  padding-top: 46px
-  padding-left: 5%
-  padding-right: 5%
+  padding-top: $topbar-height
+  display: inline-block
+  width: 100%
 
 .lumia-top-navbar
-  background-color: white
+  background:
+    color: white
+    image: url('img/winphone_logo.png')
+    size: 140px 20px
+    position: $default-padding 20px
+    repeat: no-repeat
   line-height: 1em
   position: fixed
   top: 0
   left: 0
   z-index: 99
-  padding: 15px 5%
-  width: 90%
+  padding: 20px 0
+  width: 100%
   -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1)
   -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1)
   box-shadow: 0 2px 2px rgba(0,0,0,.1)
@@ -86,6 +100,8 @@ h2
   text-decoration: none 
   font-size: 1em
   float: right
+  line-height: 20px
+  margin-right: $default-padding
 
 #lumia-intro-slider
   background-color: $blue
@@ -93,33 +109,40 @@ h2
   padding:
     top: 78px 
     bottom: 32px
-  width: 90%
+  width: 100%
   .slider-btn
     position: absolute
     z-index: 2
     width: 50px
     height: 50px
-    background-color: red
+    background:
+      image: url('img/slider-arrows.png')
+      repeat: no-repeat
+      size: 150px 50px
     display: block
+    opacity: .6
     &.prev
-      left: 0
+      left: 6%
+      background-position: 0 0
     &.next
-      right: 0
+      right: 6%
+      background-position: -100px 0
   
 .lumia-device-info-category > ul
   display: none
 .lumia-device-info-category.active > ul
   display: block
 
-
+#lumia-device-infos
+  padding-top: $topbar-height
 .lumia-device-infos-title
   background: $grey
   color: white
-  padding: 15px 5%
+  padding: 15px $default-padding
 
 .lumia-device-info-category-title, 
 .lumia-device-info-category-item
-  padding: 10px 5%
+  padding: 10px $default-padding
   font-size: 1em
 
 .lumia-device-info-category-title
@@ -130,3 +153,82 @@ h2
 
 .lumia-device-info-category-content 
   padding: 27px 3%
+
+#lumia-phone-provider
+  width: 100%
+  padding-top: $topbar-height
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  background-size: cover
+  background:
+    color: white
+    image: url('img/lumiavideo_bg.jpg')
+    repeat: no-repeat
+    position: center center
+  video
+    margin: 0 $default-padding $default-padding
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 85%
+  p
+    background: rgba(0,0,0,.5)
+    color: white
+    padding: 20px $default-padding
+    line-height: 1.5em
+    
+  .lumia-store
+    float: left
+    width: 50%
+    height: 100px
+    display: block
+    background-size: auto 50%
+    background-position: center center
+    background-repeat: no-repeat
+    &.vodafone
+      background-color: $vodafone-bg
+      background-image: url('img/provider/vodafone.png')
+    &.o2
+      background-color: $o2-bg
+      background-image: url('img/provider/o2.png')
+    &.tmobile
+      background-color: $tmobile-bg
+      background-image: url('img/provider/tmobile.png')
+    &.mobilcom
+      background-color: $mobilcom-bg
+      background-image: url('img/provider/mobilcom.png')
+      background-size: 100% auto
+    
+    
+    
+    
+    
+    
+/* Large desktop */
+@media (min-width: 1200px)
+  body
+    border: 5px solid green
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+  body
+    border: 5px solid red
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+  body
+    border: 5px solid orange
+  
+  #lumia-phone-provider video
+    width: 50%
+  
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+  body
+    border: 5px solid pink
+    
+  #lumia-phone-provider video
+    width: 85%
+
+    

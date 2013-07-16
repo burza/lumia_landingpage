@@ -53,25 +53,31 @@ table {
   left: 0;
   width: 100%; }
 
+.swipe-wrap > div > img {
+  margin: 0 auto;
+  display: block; }
+
 h2 {
   font-size: 1.2em; }
 
-#lumia-intro-slider,
-#lumia-phone-provider,
 #lumia-short-device-infos {
-  padding-top: 46px;
-  padding-left: 5%;
-  padding-right: 5%; }
+  padding-top: 60px;
+  display: inline-block;
+  width: 100%; }
 
 .lumia-top-navbar {
   background-color: white;
+  background-image: url("img/winphone_logo.png");
+  background-size: 140px 20px;
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
   line-height: 1em;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  padding: 15px 5%;
-  width: 90%;
+  padding: 20px 0;
+  width: 100%;
   -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
@@ -81,25 +87,32 @@ h2 {
   font-family: sans-serif;
   text-decoration: none;
   font-size: 1em;
-  float: right; }
+  float: right;
+  line-height: 20px;
+  margin-right: 20px; }
 
 #lumia-intro-slider {
   background-color: #00bcf2;
   color: white;
   padding-top: 78px;
   padding-bottom: 32px;
-  width: 90%; }
+  width: 100%; }
   #lumia-intro-slider .slider-btn {
     position: absolute;
     z-index: 2;
     width: 50px;
     height: 50px;
-    background-color: red;
-    display: block; }
+    background-image: url("img/slider-arrows.png");
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+    display: block;
+    opacity: 0.6; }
     #lumia-intro-slider .slider-btn.prev {
-      left: 0; }
+      left: 6%;
+      background-position: 0 0; }
     #lumia-intro-slider .slider-btn.next {
-      right: 0; }
+      right: 6%;
+      background-position: -100px 0; }
 
 .lumia-device-info-category > ul {
   display: none; }
@@ -107,14 +120,17 @@ h2 {
 .lumia-device-info-category.active > ul {
   display: block; }
 
+#lumia-device-infos {
+  padding-top: 60px; }
+
 .lumia-device-infos-title {
   background: #969696;
   color: white;
-  padding: 15px 5%; }
+  padding: 15px 20px; }
 
 .lumia-device-info-category-title,
 .lumia-device-info-category-item {
-  padding: 10px 5%;
+  padding: 10px 20px;
   font-size: 1em; }
 
 .lumia-device-info-category-title {
@@ -125,3 +141,69 @@ h2 {
 
 .lumia-device-info-category-content {
   padding: 27px 3%; }
+
+#lumia-phone-provider {
+  width: 100%;
+  padding-top: 60px;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: white;
+  background-image: url("img/lumiavideo_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center; }
+  #lumia-phone-provider video {
+    margin: 0 20px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; }
+  #lumia-phone-provider p {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 20px;
+    line-height: 1.5em; }
+  #lumia-phone-provider .lumia-store {
+    float: left;
+    width: 50%;
+    height: 100px;
+    display: block;
+    background-size: auto 50%;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    #lumia-phone-provider .lumia-store.vodafone {
+      background-color: #00bcf2;
+      background-image: url("img/provider/vodafone.png"); }
+    #lumia-phone-provider .lumia-store.o2 {
+      background-color: darkorange;
+      background-image: url("img/provider/o2.png"); }
+    #lumia-phone-provider .lumia-store.tmobile {
+      background-color: #7fba00;
+      background-image: url("img/provider/tmobile.png"); }
+    #lumia-phone-provider .lumia-store.mobilcom {
+      background-color: #00d8cc;
+      background-image: url("img/provider/mobilcom.png");
+      background-size: 100% auto; }
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  body {
+    border: 5px solid green; } }
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    border: 5px solid red; } }
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    border: 5px solid orange; }
+
+  #lumia-phone-provider video {
+    width: 50%; } }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    border: 5px solid pink; }
+
+  #lumia-phone-provider video {
+    width: 85%; } }

@@ -1,14 +1,10 @@
 
 $(document).ready(function() {  
 
-  $('.slider-btn').hide();
 
-  $(".swipe-wrap > div > img").load(function() {
-    calculate_slider_button_position();
-    $('.slider-btn').fadeIn();    
-  });
+  calculate_slider_button_position();
 
-  $(window).resize(calculate_slider_button_position);
+  $('.slider-btn').fadeIn();    
   
   function calculate_slider_button_position() {
     var elem = $(".swipe-wrap > div > img");
@@ -18,6 +14,8 @@ $(document).ready(function() {
 
     $('.slider-btn').css('top', pos + 'px');
   }
+
+  $(window).resize(calculate_slider_button_position);
   
   $('.lumia-top-navbar > a').click(function(e) {
     e.preventDefault();
