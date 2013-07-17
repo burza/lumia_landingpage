@@ -14,7 +14,8 @@ html {
 
 body {
   line-height: 1;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: #333333; }
 
@@ -25,7 +26,7 @@ ol, ul {
   list-style: none; }
 
 b {
-  font-weight: bold; }
+  font-weight: 400; }
 
 blockquote, q {
   quotes: none; }
@@ -63,12 +64,13 @@ table {
 .swipe-textbox {
   padding: 0 20px;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.3em;
   min-height: 62px; }
 
 h2 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-weight: 600; }
 
 #lumia-short-device-infos {
   padding-top: 60px;

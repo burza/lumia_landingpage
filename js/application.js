@@ -20,7 +20,7 @@ $(document).ready(function() {
   $('.lumia-top-navbar > a').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
-    	scrollTop: $("#lumia-device-infos").offset().top
+    	scrollTop: $("#lumia-device-infos").offset().top - $('.lumia-top-navbar').outerHeight()
     }, 2000);    
   });
 
