@@ -36,6 +36,9 @@ p
 ol, ul 
   list-style: none
 
+b
+  font-weight: bold
+
 blockquote, q 
   quotes: none
 
@@ -91,7 +94,24 @@ h2
   padding-top: $topbar-height
   display: inline-block
   width: 100%
+  h2
+    padding: 0 $default-padding
+    margin-bottom: $default-padding
 
+  ul
+    margin: 0 $default-padding
+    padding-bottom: $topbar-height
+    background-image: url('img/kurzinfo_logo.png'), url('img/kurzinfo_phone.png')
+    background-size: 75px 15px, 115px 218px
+    background-position: 0px 95%, 100% 150%
+    background-repeat: no-repeat
+
+  .lumia-short-info-item
+    line-height: 1.3em
+    margin-bottom: $default-padding / 2
+    &:last-child
+      width: 60%
+  
 .lumia-top-navbar
   background:
     color: white
@@ -150,8 +170,6 @@ h2
 .lumia-device-info-category.active > ul
   display: block
 
-#lumia-device-infos
-  padding-top: $topbar-height
 .lumia-device-infos-title
   background: $grey
   color: white
@@ -176,8 +194,6 @@ h2
   &.active
     background-position: 95% -24px
 
-.lumia-device-info-category-title
-
 .lumia-device-info-category-content 
   padding: 27px 3%
 
@@ -198,7 +214,7 @@ h2
     margin-left: auto
     margin-right: auto
     width: 85%
-  p
+  h2
     background: rgba(0,0,0,.5)
     color: white
     padding: 20px $default-padding

@@ -24,6 +24,9 @@ p {
 ol, ul {
   list-style: none; }
 
+b {
+  font-weight: bold; }
+
 blockquote, q {
   quotes: none; }
 
@@ -71,6 +74,21 @@ h2 {
   padding-top: 60px;
   display: inline-block;
   width: 100%; }
+  #lumia-short-device-infos h2 {
+    padding: 0 20px;
+    margin-bottom: 20px; }
+  #lumia-short-device-infos ul {
+    margin: 0 20px;
+    padding-bottom: 60px;
+    background-image: url("img/kurzinfo_logo.png"), url("img/kurzinfo_phone.png");
+    background-size: 75px 15px, 115px 218px;
+    background-position: 0px 95%, 100% 150%;
+    background-repeat: no-repeat; }
+  #lumia-short-device-infos .lumia-short-info-item {
+    line-height: 1.3em;
+    margin-bottom: 10px; }
+    #lumia-short-device-infos .lumia-short-info-item:last-child {
+      width: 60%; }
 
 .lumia-top-navbar {
   background-color: white;
@@ -128,9 +146,6 @@ h2 {
 .lumia-device-info-category.active > ul {
   display: block; }
 
-#lumia-device-infos {
-  padding-top: 60px; }
-
 .lumia-device-infos-title {
   background: #969696;
   color: white;
@@ -174,7 +189,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 85%; }
-  #lumia-phone-provider p {
+  #lumia-phone-provider h2 {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px 20px;
