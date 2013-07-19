@@ -5,10 +5,13 @@ $grey: #969696
 $topbar-height: 60px
 $default-padding: 20px
 
-$vodafone-bg: $blue
-$o2-bg: #FF8C00
-$tmobile-bg: #7FBA00
-$mobilcom-bg: #00D8CC
+$vodafone-bg: #E30513
+$o2-bg: #133E8A
+$tmobile-bg: #E10073
+$mobilcom-bg: #0E2143
+
+*
+  -webkit-tap-highlight-color: transparent
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -71,7 +74,7 @@ table
 .swipe-img > img
   display: block
   width: 75%
-  height: 50%
+  height: auto
   margin: 0 auto
 
 .swipe-textbox
@@ -89,20 +92,19 @@ table
 //.slide-teaser.intro-four *
 //  background-image: url('img/slider/slider_4.png')
 
-h2
+h2, .subhead
   font-size: 1.2em
   font-weight: 600
+  line-height: 1.5em
+  padding: $default-padding
 
 $kurz-info-logo-size: 75px 15px
 $kurz-info-phone-size: 115px 218px
 
 #lumia-short-device-infos
-  padding-top: $topbar-height
+  padding-top: $topbar-height - $default-padding
   display: inline-block
   width: 100%
-  h2
-    padding: 0 $default-padding
-    margin-bottom: $default-padding
   ul
     margin: 0 $default-padding
     padding-bottom: $topbar-height
@@ -112,12 +114,16 @@ $kurz-info-phone-size: 115px 218px
     background-size: $kurz-info-logo-size, $kurz-info-phone-size
     background-position: 0px 95%, 100% 175%
     background-repeat: no-repeat
-
+  h2
+    letter-spacing: 1px
+    padding-top: 0
   .lumia-short-info-item
     line-height: 1.3em
     margin-bottom: $default-padding / 2
     &:last-child
       width: 60%
+    b.unbreakable
+      white-space: nowrap
 
 $windows-phone-logo-size: 140px 20px
 
@@ -173,7 +179,7 @@ $slider-btn-size: 75px 25px
     -webkit-background-size: $slider-btn-size
     background-size: $slider-btn-size
     display: block
-    opacity: .3
+    opacity: .6
     &.prev
       left: 0
       background-position: 0 50%
@@ -215,7 +221,7 @@ $slider-btn-size: 75px 25px
 
 #lumia-phone-provider
   width: 100%
-  padding-top: $topbar-height
+  padding-top: 0
   -moz-background-size: cover
   -webkit-background-size: cover
   background-size: cover
@@ -231,11 +237,13 @@ $slider-btn-size: 75px 25px
     margin-right: auto
     width: 85%
   h2
+    color: white
+    padding-top: $topbar-height - $default-padding
+  .subhead
     background: rgba(0,0,0,.5)
     color: white
     padding: 20px $default-padding
-    line-height: 1.5em
-    
+    font-size: 1em
   .lumia-store
     float: left
     width: 50%
@@ -259,13 +267,21 @@ $slider-btn-size: 75px 25px
       background-color: $mobilcom-bg
       background-image: url('img/provider/mobilcom.png')
     
-    
-small
-  font-size: 0.8em
+footer    
   padding: 40px 20px
-  display: block
-  line-height: 1.3em  
-      
+  small
+    font-size: 0.8em
+    display: block
+    line-height: 1.3em
+    margin-bottom: 20px
+  a
+    display: block
+    width: 100%
+    text-align: center
+    color: $blue
+    text-decoration: none
+    font-weight: 400
+
 /* Large desktop */
 @media (min-width: 1200px)
   //body

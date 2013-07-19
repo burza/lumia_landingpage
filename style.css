@@ -1,3 +1,6 @@
+* {
+  -webkit-tap-highlight-color: transparent; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -58,7 +61,7 @@ table {
 .swipe-img > img {
   display: block;
   width: 75%;
-  height: 50%;
+  height: auto;
   margin: 0 auto; }
 
 .swipe-textbox {
@@ -68,17 +71,16 @@ table {
   line-height: 1.3em;
   min-height: 62px; }
 
-h2 {
+h2, .subhead {
   font-size: 1.2em;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 20px; }
 
 #lumia-short-device-infos {
-  padding-top: 60px;
+  padding-top: 40px;
   display: inline-block;
   width: 100%; }
-  #lumia-short-device-infos h2 {
-    padding: 0 20px;
-    margin-bottom: 20px; }
   #lumia-short-device-infos ul {
     margin: 0 20px;
     padding-bottom: 60px;
@@ -88,11 +90,16 @@ h2 {
     background-size: 75px 15px, 115px 218px;
     background-position: 0px 95%, 100% 175%;
     background-repeat: no-repeat; }
+  #lumia-short-device-infos h2 {
+    letter-spacing: 1px;
+    padding-top: 0; }
   #lumia-short-device-infos .lumia-short-info-item {
     line-height: 1.3em;
     margin-bottom: 10px; }
     #lumia-short-device-infos .lumia-short-info-item:last-child {
       width: 60%; }
+    #lumia-short-device-infos .lumia-short-info-item b.unbreakable {
+      white-space: nowrap; }
 
 .lumia-top-navbar {
   background-color: white;
@@ -140,7 +147,7 @@ h2 {
     -webkit-background-size: 75px 25px;
     background-size: 75px 25px;
     display: block;
-    opacity: 0.3; }
+    opacity: 0.6; }
     #lumia-intro-slider .slider-btn.prev {
       left: 0;
       background-position: 0 50%; }
@@ -183,7 +190,7 @@ h2 {
 
 #lumia-phone-provider {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 0;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -198,10 +205,13 @@ h2 {
     margin-right: auto;
     width: 85%; }
   #lumia-phone-provider h2 {
+    color: white;
+    padding-top: 40px; }
+  #lumia-phone-provider .subhead {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px 20px;
-    line-height: 1.5em; }
+    font-size: 1em; }
   #lumia-phone-provider .lumia-store {
     float: left;
     width: 50%;
@@ -213,23 +223,32 @@ h2 {
     background-position: center center;
     background-repeat: no-repeat; }
     #lumia-phone-provider .lumia-store.vodafone {
-      background-color: #00bcf2;
+      background-color: #e30513;
       background-image: url("img/provider/vodafone.png"); }
     #lumia-phone-provider .lumia-store.o2 {
-      background-color: darkorange;
+      background-color: #133e8a;
       background-image: url("img/provider/o2.png"); }
     #lumia-phone-provider .lumia-store.tmobile {
-      background-color: #7fba00;
+      background-color: #e10073;
       background-image: url("img/provider/tmobile.png"); }
     #lumia-phone-provider .lumia-store.mobilcom {
-      background-color: #00d8cc;
+      background-color: #0e2143;
       background-image: url("img/provider/mobilcom.png"); }
 
-small {
-  font-size: 0.8em;
-  padding: 40px 20px;
-  display: block;
-  line-height: 1.3em; }
+footer {
+  padding: 40px 20px; }
+  footer small {
+    font-size: 0.8em;
+    display: block;
+    line-height: 1.3em;
+    margin-bottom: 20px; }
+  footer a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #00bcf2;
+    text-decoration: none;
+    font-weight: 400; }
 
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
