@@ -60,12 +60,20 @@
         </div>
       </section>
       <section id="lumia-phone-provider">
-        <h2>Jetzt in Aktion erleben</h2>
-        <video controls="">
-          <source src="assets/intro.mp4" type="video/mp4">
-          <source src="assets/intro.ogv" type="video/ogg">
-          <source src="assets/intro.webm" type="video/webm">
-        </video>
+        <h2>Jetzt in Aktion erleben</h2>        
+        <video controls poster="img/lumia_poster.png">
+          <source src="assets/intro.mp4" type="video/mp4" />
+          <source src="assets/intro.ogv" type="video/ogg" />
+          <source src="assets/intro.webm" type="video/webm" />
+        	<object width="640" height="360" type="application/x-shockwave-flash" data="flashfox.swf">
+        		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+        		<param name="movie" value="flashfox.swf" />
+        		<param name="flashvars" value="controlbar=over&amp;image=img/lumia_poster.png&amp;file=assets/intro.mp4" />
+        		<!-- fallback image. note the title field below, put the title of the video there -->
+        		<img src="img/lumia_poster.png" width="640" height="360" alt="intro"
+        		     title="No video playback capabilities" />
+        	</object>
+        </video>        
         <h3 class="subhead">Dein Nokia Lumia 925 gibt es bei folgenden Partnern</h3>
         <ul>
           <li><a href="http://www.o2online.de/goto/nokia-lumia-925/" class="lumia-store o2"></a></li>
