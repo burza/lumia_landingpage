@@ -87,7 +87,7 @@ h2, .subhead {
   #lumia-short-device-infos ul {
     margin: 0 20px;
     padding-bottom: 60px;
-    background-image: url("img/kurzinfo_logo.png"), url("img/kurzinfo_phone.png");
+    background-image: url("img/kurzinfo_logo.png"), url("img/kurzinfo_phone.jpg");
     -moz-background-size: 75px 15px, 115px 218px;
     -webkit-background-size: 75px 15px, 115px 218px;
     background-size: 75px 15px, 115px 218px;
