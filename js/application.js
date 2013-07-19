@@ -1,7 +1,7 @@
 
 $(document).ready(function() {  
 
-
+  FastClick.attach(document.body);
   // calculate_slider_button_position();
 
   $('.slider-btn').fadeIn();    
