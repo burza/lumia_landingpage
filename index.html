@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nokia Lumia - Landingpage</title>
+    <title>Nokia Lumia 925</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
@@ -61,19 +61,19 @@
       </section>
       <section id="lumia-phone-provider">
         <h2>Jetzt in Aktion erleben</h2>        
-        <video controls poster="img/lumia_poster.png">
-          <source src="assets/intro.mp4" type="video/mp4" />
-          <source src="assets/intro.ogv" type="video/ogg" />
-          <source src="assets/intro.webm" type="video/webm" />
-        	<object width="640" height="360" type="application/x-shockwave-flash" data="flashfox.swf">
-        		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
-        		<param name="movie" value="flashfox.swf" />
-        		<param name="flashvars" value="controlbar=over&amp;image=img/lumia_poster.png&amp;file=assets/intro.mp4" />
-        		<!-- fallback image. note the title field below, put the title of the video there -->
-        		<img src="img/lumia_poster.png" width="640" height="360" alt="intro"
-        		     title="No video playback capabilities" />
-        	</object>
-        </video>        
+        <video controls="controls"  poster="img/Sequenz_01.jpg" title="intro">
+          <source src="assets/Sequenz_01.mp4" />
+          <source src="assets/Sequenz_01.webm" type="video/webm" />
+          <source src="assets/Sequenz_01.ogv" type="video/ogg" />
+          <object type="application/x-shockwave-flash" data="flashfox.swf" width="640" height="360">
+            <param name="movie" value="flashfox.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="flashVars" value="autoplay=false&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=img/Sequenz_01.jpg&amp;src=Sequenz_01.m4v" />
+         <embed src="flashfox.swf" width="640" height="360" flashVars="autoplay=false&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=img/Sequenz_01.jpg&amp;src=Sequenz_01.m4v"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+            <img alt="intro" src="img/Sequenz_01.jpg" width="640" height="360" title="Video playback is not supported by your browser" />
+          </object>
+        </video>
+        
         <h3 class="subhead">Dein Nokia Lumia 925 gibt es bei folgenden Partnern</h3>
         <ul>
           <li><a href="http://www.o2online.de/goto/nokia-lumia-925/" class="lumia-store o2"></a></li>
@@ -268,6 +268,7 @@
     <script src="js/fastclick.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/swipe.js"></script>
+    <script src="js/html5ext.js"></script>
     <script src="js/application.js"></script>
     
   </body>
