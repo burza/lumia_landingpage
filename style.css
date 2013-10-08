@@ -45,6 +45,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+sup {
+  vertical-align: top;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em; }
+
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -99,7 +105,7 @@ h2, .subhead {
   #lumia-short-device-infos .lumia-short-info-item {
     line-height: 1.3em;
     margin-bottom: 10px; }
-    #lumia-short-device-infos .lumia-short-info-item:last-child {
+    #lumia-short-device-infos .lumia-short-info-item.break-early {
       width: 60%; }
     #lumia-short-device-infos .lumia-short-info-item b.unbreakable {
       white-space: nowrap; }
@@ -226,16 +232,16 @@ h2, .subhead {
     background-position: center center;
     background-repeat: no-repeat; }
     #lumia-phone-provider .lumia-store.vodafone {
-      background-color: #e30513;
+      background-color: #7fba00;
       background-image: url("img/provider/vodafone.png"); }
     #lumia-phone-provider .lumia-store.o2 {
-      background-color: #133e8a;
+      background-color: #0094f2;
       background-image: url("img/provider/o2.png"); }
     #lumia-phone-provider .lumia-store.tmobile {
-      background-color: #e10073;
+      background-color: #9b4f96;
       background-image: url("img/provider/tmobile.png"); }
-    #lumia-phone-provider .lumia-store.mobilcom {
-      background-color: #0e2143;
+    #lumia-phone-provider .lumia-store.mm {
+      background-color: #00188f;
       background-image: url("img/provider/mobilcom.png"); }
 
 footer {

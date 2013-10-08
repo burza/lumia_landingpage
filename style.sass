@@ -5,10 +5,10 @@ $grey: #969696
 $topbar-height: 60px
 $default-padding: 20px
 
-$vodafone-bg: #E30513
-$o2-bg: #133E8A
-$tmobile-bg: #E10073
-$mobilcom-bg: #0E2143
+$vodafone-bg: rgb(127,186,0)
+$o2-bg: rgb(0,148,242)
+$tmobile-bg: rgb(155,79,150)
+$mm-bg: rgb(0,24,143)
 
 *
   -webkit-tap-highlight-color: transparent
@@ -56,7 +56,13 @@ blockquote:before, blockquote:after, q:before, q:after
 table 
   border-collapse: collapse
   border-spacing: 0
-  
+
+sup
+  vertical-align: top
+  font-size: .8em
+  position: relative
+  top: -0.4em
+
 .swipe
   overflow: hidden
   visibility: hidden
@@ -122,7 +128,7 @@ $kurz-info-phone-size: 115px 218px
   .lumia-short-info-item
     line-height: 1.3em
     margin-bottom: $default-padding / 2
-    &:last-child
+    &.break-early
       width: 60%
     b.unbreakable
       white-space: nowrap
@@ -265,8 +271,8 @@ $slider-btn-size: 75px 25px
     &.tmobile
       background-color: $tmobile-bg
       background-image: url('img/provider/tmobile.png')
-    &.mobilcom
-      background-color: $mobilcom-bg
+    &.mm
+      background-color: $mm-bg
       background-image: url('img/provider/mobilcom.png')
     
 footer    
