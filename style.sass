@@ -168,8 +168,8 @@ $windows-phone-logo-size: 140px 20px
 $slider-btn-size: 75px 25px
 
 #lumia-intro-slider
-  background-color: $blue
-  color: white
+  background-color: #f2f2f2
+  color: $font-color
   padding:
     top: 78px 
     bottom: 32px
@@ -180,14 +180,14 @@ $slider-btn-size: 75px 25px
     width: 50px
     height: 100%
     background:
-      image: url('img/slider-arrows.png')
+      image: url('img/slider-arrows-dark.png')
       repeat: no-repeat
       position: 0 50%
     -moz-background-size: $slider-btn-size
     -webkit-background-size: $slider-btn-size
     background-size: $slider-btn-size
     display: block
-    opacity: .6
+    opacity: .15
     &.prev
       left: 0
       background-position: 0 50%
@@ -211,14 +211,14 @@ $slider-btn-size: 75px 25px
   font-size: 1em
 
 .lumia-device-info-category-title
-  background-color: $blue 
+  background-color: $o2-bg
   background-image: url('img/accordion-arrows.png')
   background-size: 18px 49px
   background-repeat: no-repeat
   background-position: 95% 12px
   font-weight: lighter
   color: white
-  border-bottom: 1px solid rgba(255,255,255,.3)
+  border-bottom: 1px solid rgba(255,255,255,.2)
   &:last-child
     border-bottom: none
   &.active
@@ -273,7 +273,8 @@ $slider-btn-size: 75px 25px
       background-image: url('img/provider/tmobile.png')
     &.mm
       background-color: $mm-bg
-      background-image: url('img/provider/mobilcom.png')
+      background-image: url('img/provider/mediamarkt.png')
+      background-size: 90% auto
     
 footer    
   padding: 40px 20px
@@ -286,7 +287,7 @@ footer
     display: block
     width: 100%
     text-align: center
-    color: $blue
+    color: $o2-bg
     text-decoration: none
     font-weight: 400
 

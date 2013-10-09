@@ -139,8 +139,8 @@ h2, .subhead {
   margin-right: 20px; }
 
 #lumia-intro-slider {
-  background-color: #00bcf2;
-  color: white;
+  background-color: #f2f2f2;
+  color: #333333;
   padding-top: 78px;
   padding-bottom: 32px;
   width: 100%; }
@@ -149,14 +149,14 @@ h2, .subhead {
     z-index: 2;
     width: 50px;
     height: 100%;
-    background-image: url("img/slider-arrows.png");
+    background-image: url("img/slider-arrows-dark.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
     -moz-background-size: 75px 25px;
     -webkit-background-size: 75px 25px;
     background-size: 75px 25px;
     display: block;
-    opacity: 0.6; }
+    opacity: 0.15; }
     #lumia-intro-slider .slider-btn.prev {
       left: 0;
       background-position: 0 50%; }
@@ -181,14 +181,14 @@ h2, .subhead {
   font-size: 1em; }
 
 .lumia-device-info-category-title {
-  background-color: #00bcf2;
+  background-color: #0094f2;
   background-image: url("img/accordion-arrows.png");
   background-size: 18px 49px;
   background-repeat: no-repeat;
   background-position: 95% 12px;
   font-weight: lighter;
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .lumia-device-info-category-title:last-child {
     border-bottom: none; }
   .lumia-device-info-category-title.active {
@@ -242,7 +242,8 @@ h2, .subhead {
       background-image: url("img/provider/tmobile.png"); }
     #lumia-phone-provider .lumia-store.mm {
       background-color: #00188f;
-      background-image: url("img/provider/mobilcom.png"); }
+      background-image: url("img/provider/mediamarkt.png");
+      background-size: 90% auto; }
 
 footer {
   padding: 40px 20px; }
@@ -255,7 +256,7 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
-    color: #00bcf2;
+    color: #0094f2;
     text-decoration: none;
     font-weight: 400; }
 
