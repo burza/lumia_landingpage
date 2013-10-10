@@ -144,6 +144,13 @@ h2, .subhead {
   padding-top: 78px;
   padding-bottom: 32px;
   width: 100%; }
+  #lumia-intro-slider .slider-branding {
+    width: 100%;
+    height: 40px;
+    background-image: url("img/winphone_logo_w.png");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: 50%; }
   #lumia-intro-slider .slider-btn {
     position: absolute;
     z-index: 2;
@@ -243,7 +250,7 @@ h2, .subhead {
     #lumia-phone-provider .lumia-store.mm {
       background-color: #00188f;
       background-image: url("img/provider/mediamarkt.png");
-      background-size: 90% auto; }
+      background-size: 75% auto; }
 
 footer {
   padding: 40px 20px; }
