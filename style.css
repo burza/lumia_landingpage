@@ -18,7 +18,7 @@ html {
 body {
   background-color: #008cc5;
   line-height: 1;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: white;
@@ -80,6 +80,52 @@ sup {
   font-weight: 600;
   line-height: 1.3em;
   min-height: 62px; }
+
+#container {
+  margin: 50px 15px; }
+
+.brand {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  width: 188px; }
+
+h1 {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-bottom: 2em; }
+
+.video, .links {
+  margin-bottom: 2em;
+  background-image: url("img/glow.png");
+  background-size: 100% auto;
+  background-position: top center; }
+
+.links {
+  background-position: center center; }
+
+.btn-cta {
+  outline: none;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 2.5em;
+  text-align: center;
+  background-color: #4caed6;
+  box-shadow: 0 1px 0 #5bbede inset, 0 1px 0 #61b8db;
+  border: 1px solid #0078a9;
+  border-top: 1px solid #0087bf;
+  border-bottom: 1px solid #006a96;
+  border-radius: 3px; }
+  .btn-cta:active {
+    background-color: #82c6e2;
+    border-top-color: #0078a9;
+    border-bottom-color: #4d97b6;
+    box-shadow: 0 1px 0 #8cd2e8 inset, 0 1px 0 #61b8db; }
 
 footer {
   padding: 40px 20px; }
