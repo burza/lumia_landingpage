@@ -131,7 +131,7 @@ h1 {
 
 .btn-store {
   width: 128px;
-  margin: 3em 0;
+  margin: 3em 0 6em 0;
   display: inline-block;
   height: 44px;
   background-size: 100% auto; }
@@ -143,7 +143,7 @@ h1 {
     background-image: url("img/btn-store-android.png"); }
 
 footer {
-  margin: 0 15px 3em 15px;
+  margin: 0 15px 1em 15px;
   clear: both; }
   footer small {
     font-size: 0.8em;
