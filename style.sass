@@ -1,14 +1,7 @@
-$font-color: #333333
-$blue: #00BCF2
-$grey: #969696
+$font-color: #FFFFFF
+$blue: #008CC5
 
-$topbar-height: 60px
 $default-padding: 20px
-
-$vodafone-bg: rgb(127,186,0)
-$o2-bg: rgb(0,148,242)
-$tmobile-bg: rgb(155,79,150)
-$mm-bg: rgb(0,24,143)
 
 *
   -webkit-tap-highlight-color: transparent
@@ -27,9 +20,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html
   -webkit-text-size-adjust: 100%
 
-body 
+body
+  background-color: $blue
   line-height: 1
-  //font-family: Arial, sans-serif
   font-family: 'Open Sans', sans-serif
   font-weight: 300
   font-size: 16px
@@ -91,198 +84,7 @@ sup
   font-weight: 600
   line-height: 1.3em
   min-height: 62px
-//.slide-teaser.intro-one .swipe-img
-//  background-image: url('img/slider/slider_1.png')
-//.slide-teaser.intro-two .swipe-img
-//  background-image: url('img/slider/slider_2.png')
-//.slide-teaser.intro-three .swipe-img
-//  background-image: url('img/slider/slider_3.png')
-//.slide-teaser.intro-four *
-//  background-image: url('img/slider/slider_4.png')
 
-h2, .subhead
-  font-size: 1.2em
-  font-weight: 600
-  line-height: 1.5em
-  padding: $default-padding
-
-$kurz-info-logo-size: 75px 15px
-$kurz-info-phone-size: 115px 218px
-
-#lumia-short-device-infos
-  padding-top: $topbar-height - $default-padding
-  display: inline-block
-  width: 100%
-  ul
-    margin: 0 $default-padding
-    padding-bottom: $topbar-height
-    background-image: url('img/kurzinfo_logo.png'), url('img/kurzinfo_phone.jpg')
-    -moz-background-size: $kurz-info-logo-size, $kurz-info-phone-size
-    -webkit-background-size: $kurz-info-logo-size, $kurz-info-phone-size
-    background-size: $kurz-info-logo-size, $kurz-info-phone-size
-    background-position: 0px 95%, 100% 175%
-    background-repeat: no-repeat
-  h2
-    letter-spacing: 1px
-    padding-top: 0
-  .lumia-short-info-item
-    line-height: 1.3em
-    margin-bottom: $default-padding / 2
-    &.break-early
-      width: 60%
-    b.unbreakable
-      white-space: nowrap
-
-$windows-phone-logo-size: 140px 20px
-
-.lumia-top-navbar
-  background:
-    color: white
-    image: url('img/winphone_logo.png')
-    position: $default-padding 20px
-    repeat: no-repeat
-  -moz-background-size: $windows-phone-logo-size
-  -webkit-background-size: $windows-phone-logo-size
-  background-size: $windows-phone-logo-size
-  line-height: 1em
-  position: fixed
-  top: 0
-  left: 0
-  z-index: 99
-  padding: 20px 0
-  width: 100%
-  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1)
-  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1)
-  box-shadow: 0 2px 2px rgba(0,0,0,.1)
-
-.lumia-top-navbar > a
-  color: $font-color
-  font-family: sans-serif 
-  text-decoration: none 
-  font-size: 1em
-  float: right
-  line-height: 20px
-  margin-right: $default-padding
-
-
-$slider-btn-size: 75px 25px
-
-#lumia-intro-slider
-  background-color: #f2f2f2
-  color: $font-color
-  padding:
-    top: 78px 
-    bottom: 32px
-  width: 100%
-  .slider-branding
-    width: 100%
-    height: 40px
-    background:
-      image: url('img/winphone_logo_w.png')
-      repeat: no-repeat
-      size: auto 50%
-      position: 50%
-  .slider-btn
-    position: absolute
-    z-index: 2
-    width: 50px
-    height: 100%
-    background:
-      image: url('img/slider-arrows-dark.png')
-      repeat: no-repeat
-      position: 0 50%
-    -moz-background-size: $slider-btn-size
-    -webkit-background-size: $slider-btn-size
-    background-size: $slider-btn-size
-    display: block
-    opacity: .15
-    &.prev
-      left: 0
-      background-position: 0 50%
-    &.next
-      right: 0
-      background-position: -25px 50%
-  
-.lumia-device-info-category > ul
-  display: none
-.lumia-device-info-category.active > ul
-  display: block
-
-.lumia-device-infos-title
-  background: $grey
-  color: white
-  padding: 15px $default-padding
-
-.lumia-device-info-category-title, 
-.lumia-device-info-category-item
-  padding: 10px $default-padding
-  font-size: 1em
-
-.lumia-device-info-category-title
-  background-color: $o2-bg
-  background-image: url('img/accordion-arrows.png')
-  background-size: 18px 49px
-  background-repeat: no-repeat
-  background-position: 95% 12px
-  font-weight: lighter
-  color: white
-  border-bottom: 1px solid rgba(255,255,255,.2)
-  &:last-child
-    border-bottom: none
-  &.active
-    background-position: 95% -24px
-
-.lumia-device-info-category-content 
-  padding: 27px 3%
-
-#lumia-phone-provider
-  width: 100%
-  padding-top: 0
-  -moz-background-size: cover
-  -webkit-background-size: cover
-  background-size: cover
-  background:
-    color: white
-    image: url('img/lumiavideo_bg.jpg')
-    repeat: no-repeat
-    position: center center
-  video
-    margin: 0 $default-padding $default-padding
-    display: block
-    margin-left: auto
-    margin-right: auto
-    width: 85%
-  h2
-    color: white
-    padding-top: $topbar-height - $default-padding
-  .subhead
-    background: rgba(0,0,0,.5)
-    color: white
-    padding: 20px $default-padding
-    font-size: 1em
-  .lumia-store
-    float: left
-    width: 50%
-    height: 100px
-    display: block
-    -moz-background-size: auto 50%
-    -webkit-background-size: auto 50%
-    background-size: auto 50%
-    background-position: center center
-    background-repeat: no-repeat
-    &.vodafone
-      background-color: $vodafone-bg
-      background-image: url('img/provider/vodafone.png')
-    &.o2
-      background-color: $o2-bg
-      background-image: url('img/provider/o2.png')
-    &.tmobile
-      background-color: $tmobile-bg
-      background-image: url('img/provider/tmobile.png')
-    &.mm
-      background-color: $mm-bg
-      background-image: url('img/provider/mediamarkt.png')
-      background-size: 75% auto
     
 footer    
   padding: 40px 20px
@@ -292,10 +94,10 @@ footer
     line-height: 1.3em
     margin-bottom: 20px
   a
+    color: white
     display: block
     width: 100%
     text-align: center
-    color: $o2-bg
     text-decoration: none
     font-weight: 400
 
@@ -319,12 +121,3 @@ footer
 @media only screen and (max-width: 480px)
   //body
   //  border: 5px solid pink
-    
-  #lumia-phone-provider video
-    width: 85%
-  .mobilcom
-    -moz-background-size: auto 35% !important
-    -webkit-background-size: auto 35% !important
-    background-size: auto 35% !important
-
-    
