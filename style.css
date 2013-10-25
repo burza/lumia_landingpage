@@ -82,7 +82,7 @@ sup {
   min-height: 62px; }
 
 #container {
-  margin: 50px 15px; }
+  margin: 50px 15px 0 15px; }
 
 .brand {
   display: block;
@@ -98,13 +98,15 @@ h1 {
   margin-bottom: 2em; }
 
 .video, .links {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   background-image: url("img/glow.png");
   background-size: 100% auto;
-  background-position: top center; }
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .links {
-  background-position: center center; }
+  background-position: center 1em;
+  text-align: center; }
 
 .btn-cta {
   outline: none;
@@ -127,8 +129,22 @@ h1 {
     border-bottom-color: #4d97b6;
     box-shadow: 0 1px 0 #8cd2e8 inset, 0 1px 0 #61b8db; }
 
+.btn-store {
+  width: 128px;
+  margin: 3em 0;
+  display: inline-block;
+  height: 44px;
+  background-size: 100% auto; }
+  .btn-store.appstore-link {
+    float: left;
+    background-image: url("img/btn-store-apple.png"); }
+  .btn-store.googleplay-link {
+    float: right;
+    background-image: url("img/btn-store-android.png"); }
+
 footer {
-  padding: 40px 20px; }
+  margin: 0 15px 3em 15px;
+  clear: both; }
   footer small {
     font-size: 0.8em;
     display: block;
