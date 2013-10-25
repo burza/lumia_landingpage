@@ -100,7 +100,7 @@ h1 {
 .video, .links {
   padding-bottom: 2em;
   background-image: url("img/glow.png");
-  background-size: 100% auto;
+  background-size: 320px auto;
   background-position: top center;
   background-repeat: no-repeat; }
 
